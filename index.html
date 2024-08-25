@@ -23,8 +23,8 @@
 </head>
 <body>
 	
-	<div class="limiter">
-		<div class="container-login100">
+	<!-- <div class="limiter"> -->
+		<div class="container-login100" id="login-client">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="images/img-01.png" alt="IMG">
@@ -35,7 +35,7 @@
 						EAT Solution xin chào!
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Bạn phải nhập tài khoản được cấp">
+					<div class="wrap-input100 validate-input" data-validate = "Mời quý khách nhập tài khoản được cấp">
 						<input class="input100" type="text" name="email" placeholder="Nhập tài khoản">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -43,7 +43,7 @@
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Bạn phải nhập mật khẩu được cấp">
+					<div class="wrap-input100 validate-input" data-validate = "Mời quý khách nhập mật khẩu được cấp">
 						<input class="input100" type="password" name="pass" placeholder="Nhập mật khẩu">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -68,14 +68,66 @@
 
 					<div class="text-center p-t-136">
 						<a class="txt2" href="#">
-							Quản lý
+							<button id="adminButton">Quản lý</button>
 							<i class="fa fa-key" aria-hidden="true"></i>
 						</a>
 					</div>
 				</form>
 			</div>
 		</div>
-	</div>
+
+		<div class="container-login100" id="login-admin" style="display:none;" >
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Quản lý hệ thống
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Nhập tài khoản tại đây">
+						<input class="input100" type="text" name="email" placeholder="Nhập tài khoản">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user-o" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Nhập mật khẩu tại đây">
+						<input class="input100" type="password" name="pass" placeholder="Nhập mật khẩu">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" >
+							Đăng nhập
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Quên
+						</span>
+						<a class="txt2" href="#">
+							Tài khoản/Mật khẩu?
+						</a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" >
+							<button id="clientButton">Khách hàng</button>
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	<!-- </div> -->
 	
 	
 
