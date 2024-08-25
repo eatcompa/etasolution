@@ -1,8 +1,6 @@
-
 // (function ($) {
 //     "use strict";
 
-    
 //     /*==================================================================
 //     [ Validate ]*/
 //     var input = $('.validate-input .input100');
@@ -19,7 +17,6 @@
 
 //         return check;
 //     });
-
 
 //     $('.validate-form .input100').each(function(){
 //         $(this).focus(function(){
@@ -51,23 +48,22 @@
 
 //         $(thisAlert).removeClass('alert-validate');
 //     }
-    
-    
 
 // })(jQuery);
 
-const adminUpButton=document.getElementById('adminButton');
-const clientButton=document.getElementById('clientButton');
-const clientForm=document.getElementById('login-client');
-const adminForm=document.getElementById('login-admin');
+// const adminUpButton = document.getElementById('adminButton');
+// const clientButton = document.getElementById('clientButton');
+// const clientForm = document.getElementById('login-client');
+// const adminForm = document.getElementById('login-admin');
 
-adminUpButton.addEventListener('click',function(){
-    adminForm.style.display="block";
-    clientForm.style.display="none";
+// adminUpButton.addEventListener('click', function(event) {
+//     event.preventDefault(); // Ngăn chặn hành vi mặc định
+//     adminForm.style.display = "block";
+//     clientForm.style.display = "none";
+// });
 
-})
-clientButton.addEventListener('click',function(){
-    adminForm.style.display="none";
-    clientForm.style.display="block";
-    
-})
+// clientButton.addEventListener('click', function(event) {
+//     event.preventDefault(); // Ngăn chặn hành vi mặc định
+//     adminForm.style.display = "none";
+//     clientForm.style.display = "block";
+// });
